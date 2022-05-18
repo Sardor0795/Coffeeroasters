@@ -42,6 +42,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 *,
@@ -253,6 +254,14 @@ button {
     background-image: url("../img/hero-bg@2x.jpg");
   }
   .hero--img::before {
+    content: "";
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-left: -80px;
+    margin-top: -50px;
+    transform: rotate(-25deg);
     background-image: url("../img/alfred@2x.jpg");
   }
 }
