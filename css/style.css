@@ -1,3 +1,41 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CUSTOM PROPERTIES */
+
+:root {
+  --main-font: "Roboto", sans-serif;
+  --yellow-bg: #f0d1ab;
+  --outline-color: #0a775f;
+  --bg-green: #0a775f;
+}
+
 /* GLOBAL */
 
 html {
@@ -14,21 +52,39 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 3px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
-  padding: 0;
-  margin: 0;
+  color: #333;
+  font-family: var(--main-font);
   font-size: 16px;
-  line-height: 1.5;
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:active {
+  opacity: 0.6;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 li {
@@ -39,11 +95,13 @@ img {
   display: block;
 }
 
-a, span, button {
+a,
+span,
+button {
   display: inline-block;
 }
 
-button{
+button {
   border: none;
   background: none;
   cursor: pointer;
@@ -53,11 +111,48 @@ button{
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1140px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* HEADER */
+
+.site--header {
+  background-color: var(--yellow-bg);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site--logo {
+  width: 235px;
+  height: 24px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 /* MAIN CONTENT */
@@ -66,14 +161,92 @@ button{
   flex-grow: 1;
 }
 
+/* HERO CONTENT */
+
+.hero--section {
+  background-color: var(--yellow-bg);
+  /* background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(50% + 100px) center; */
+}
+
+.hero--container {
+  display: flex;
+}
+
+.hero--content {
+  width: 59%;
+  padding-top: 116px;
+  padding-left: 100px;
+  padding-right: 50px;
+}
+
+.hero--title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.hero--text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 34px;
+}
+
+.hero--btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+  background-color: var(--bg-green);
+}
+
+.hero--btn:hover {
+  opacity: 0.8;
+}
+
+.hero--btn:active {
+  opacity: 0.6;
+}
+
+.hero--img {
+  width: 710px;
+  height: 696px;
+  margin-right: -280px;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+.hero--img::before {
+  content: "";
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-left: -80px;
+  margin-top: -50px;
+  transform: rotate(-25deg);
+  background-image: url("../img/alfred.jpg");
+}
+
 /* RETINA BG */
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
 }
