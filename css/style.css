@@ -240,6 +240,9 @@ button {
   margin-top: -50px;
   transform: rotate(-25deg);
   background-image: url("../img/alfred.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* RETINA BG */
@@ -254,14 +257,6 @@ button {
     background-image: url("../img/hero-bg@2x.jpg");
   }
   .hero--img::before {
-    content: "";
-    display: inline-block;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    margin-left: -80px;
-    margin-top: -50px;
-    transform: rotate(-25deg);
     background-image: url("../img/alfred@2x.jpg");
   }
 }
