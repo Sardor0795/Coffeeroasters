@@ -249,4 +249,10 @@ button {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+  .hero--img {
+    background-image: url("../img/hero-bg@2x.jpg");
+  }
+  .hero--img::before {
+    background-image: url("../img/alfred@2x.jpg");
+  }
 }
