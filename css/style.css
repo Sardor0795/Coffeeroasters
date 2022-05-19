@@ -246,8 +246,17 @@ button {
 
 .collection {
   width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: var(--bg-collection);
   padding: 50px 143px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .collection--title {
@@ -268,17 +277,51 @@ button {
 .collection--img {
   width: 450px;
   height: 375px;
-  background-image: url('../img/collection-img_1.png');
+  background-image: url("../img/collection-img_1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  margin-right: 117px;
 }
 
 .collection--content {
+  width: 453px;
 }
+
 .collection--content--title {
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 10px;
+  line-height: 56px;
+  color: #333333;
 }
+
 .collection--content--text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #333333;
+}
+
+.collection--box:nth-child(odd) .collection--img {
+  order: 1;
+  margin-right: 0;
+  margin-left: 117px;
+}
+
+.leaf1 {
+  transform: rotate(22deg);
+  margin-left: -300px;
+  margin-top: -126px;
+}
+
+.leaf2 {
+  margin-left: 425px;
+}
+
+.leaf3 {
+  margin-left: -360px;
+  margin-top: 368px;
 }
 
 /* RETINA BG */
