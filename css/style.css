@@ -1,3 +1,13 @@
+/* CUSTOM PROPERTIES */
+
+:root {
+  --main-font: "Roboto", sans-serif;
+  --yellow-bg: #f0d1ab;
+  --outline-color: #0a775f;
+  --bg-green: #0a775f;
+  --bg-collection: #f6f6ef;
+}
+
 /* FONTS */
 
 @font-face {
@@ -27,22 +37,13 @@
   font-display: swap;
 }
 
-/* CUSTOM PROPERTIES */
-
-:root {
-  --main-font: "Roboto", sans-serif;
-  --yellow-bg: #f0d1ab;
-  --outline-color: #0a775f;
-  --bg-green: #0a775f;
-}
-
 /* GLOBAL */
 
 html {
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 *,
@@ -66,7 +67,7 @@ body {
   color: #333;
   font-family: var(--main-font);
   font-size: 16px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -166,10 +167,6 @@ button {
 
 .hero--section {
   background-color: var(--yellow-bg);
-  /* background-image: url("../img/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: calc(50% + 100px) center; */
 }
 
 .hero--container {
@@ -243,6 +240,45 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+/* COLLECTION SECTION */
+
+.collection {
+  width: 1400px;
+  background-color: var(--bg-collection);
+  padding: 50px 143px;
+}
+
+.collection--title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 80px;
+}
+
+.collection--box {
+  display: flex;
+  align-items: center;
+}
+
+.collection--img {
+  width: 450px;
+  height: 375px;
+  background-image: url('../img/collection-img_1.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.collection--content {
+}
+.collection--content--title {
+}
+.collection--content--text {
 }
 
 /* RETINA BG */
