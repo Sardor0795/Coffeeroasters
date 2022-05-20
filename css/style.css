@@ -113,7 +113,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1440px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -218,7 +218,7 @@ button {
 }
 
 .hero--img {
-  width: 710px;
+  width: 645px;
   height: 696px;
   margin-right: -280px;
   background-image: url("../img/hero-bg.jpg");
@@ -244,10 +244,18 @@ button {
 
 /* COLLECTION SECTION */
 
-.collection {
-  width: 1400px;
+.collection--wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+}
+
+.collection {
+  width: 100%;
+  max-width: 1400px;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: var(--bg-collection);
@@ -256,7 +264,6 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .collection--title {
@@ -282,6 +289,18 @@ button {
   background-position: center center;
   background-size: cover;
   margin-right: 117px;
+}
+
+.collection--img--2 {
+  background-image: url('../img/collection-img_2.png');
+}
+
+.collection--img--3 {
+  background-image: url('../img/collection-img_3.png');
+}
+
+.collection--img--4 {
+  background-image: url('../img/collection-img_4.png');
 }
 
 .collection--content {
@@ -320,7 +339,7 @@ button {
 }
 
 .leaf3 {
-  margin-left: -360px;
+  margin-left: -350px;
   margin-top: 368px;
 }
 
@@ -337,5 +356,17 @@ button {
   }
   .hero--img::before {
     background-image: url("../img/alfred@2x.jpg");
+  }
+  .collection--img {
+    background-image: url("../img/collection-img_1@2x.png");
+  }
+  .collection--img--2 {
+    background-image: url('../img/collection-img_2@2x.png');
+  } 
+  .collection--img--3 {
+    background-image: url('../img/collection-img_3@2x.png');
+  }
+  .collection--img--4 {
+    background-image: url('../img/collection-img_4@2x.png');
   }
 }
