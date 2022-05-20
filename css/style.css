@@ -113,7 +113,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1400px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -292,15 +292,15 @@ button {
 }
 
 .collection--img--2 {
-  background-image: url('../img/collection-img_2.png');
+  background-image: url("../img/collection-img_2.png");
 }
 
 .collection--img--3 {
-  background-image: url('../img/collection-img_3.png');
+  background-image: url("../img/collection-img_3.png");
 }
 
 .collection--img--4 {
-  background-image: url('../img/collection-img_4.png');
+  background-image: url("../img/collection-img_4.png");
 }
 
 .collection--content {
@@ -343,6 +343,97 @@ button {
   margin-top: 368px;
 }
 
+/* CHOOSE CARD SECTION */
+
+.choose--section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.choose--container {
+  background-image: url("../img/choose--bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 30px;
+}
+
+.choose--title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.choose-text {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 580px;
+  line-height: 28px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-bottom: 80px;
+}
+
+.choose--cards {
+  display: flex;
+  margin-left: -20px;
+  margin-bottom: -209px;
+}
+
+.choose--card {
+  margin-left: 20px;
+}
+
+.choose--card--img {
+  width: 100%;
+  height: 500px;
+  background-color: #333;
+  margin-bottom: 28px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shoose--card--img--1 {
+  background-image: url("../img/choose--img--1.jpg");
+}
+
+.shoose--card--img--2 {
+  background-image: url("../img/choose--img--2.jpg");
+}
+
+.shoose--card--img--3 {
+  background-image: url("../img/choose--img--3.jpg");
+}
+
+.choose--card--title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.choose-card--text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.burst--img {
+  display: inline-block;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
 /* RETINA BG */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -361,12 +452,21 @@ button {
     background-image: url("../img/collection-img_1@2x.png");
   }
   .collection--img--2 {
-    background-image: url('../img/collection-img_2@2x.png');
-  } 
+    background-image: url("../img/collection-img_2@2x.png");
+  }
   .collection--img--3 {
-    background-image: url('../img/collection-img_3@2x.png');
+    background-image: url("../img/collection-img_3@2x.png");
   }
   .collection--img--4 {
-    background-image: url('../img/collection-img_4@2x.png');
+    background-image: url("../img/collection-img_4@2x.png");
+  }
+  .shoose--card--img--1 {
+    background-image: url("../img/choose--img--1@2x.jpg");
+  }
+  .shoose--card--img--2 {
+    background-image: url("../img/choose--img--2@2x.jpg");
+  }
+  .shoose--card--img--3 {
+    background-image: url("../img/choose--img--3@2x.jpg");
   }
 }
