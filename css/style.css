@@ -278,7 +278,8 @@ button {
 }
 
 .collection--img {
-  width: 450px;
+  /* width: 450px; */
+  width: 50%;
   height: 375px;
   background-image: url("../img/collection-img_1.png");
   background-repeat: no-repeat;
@@ -300,7 +301,8 @@ button {
 }
 
 .collection--content {
-  width: 453px;
+  /* width: 453px; */
+  width: 50%;
 }
 
 .collection--content--title {
@@ -325,18 +327,22 @@ button {
 }
 
 .leaf1 {
+  display: inline-block;
   transform: rotate(22deg);
-  margin-left: -300px;
-  margin-top: -126px;
+  margin-left: -155px;
+  margin-bottom: -369px;
 }
 
 .leaf2 {
-  margin-left: 425px;
+  display: inline-block;
+  margin-left: 1115px;
+  margin-bottom: -1199px;
 }
 
 .leaf3 {
-  margin-left: -350px;
-  margin-top: 368px;
+  display: inline-block;
+  margin-left: -173px;
+  margin-bottom: -1540px;
 }
 
 /* CHOOSE CARD SECTION */
