@@ -206,11 +206,11 @@ button {
 .hero-section-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .hero-section-content {
   padding-top: 116px;
+  padding-bottom: 116px;
   padding-right: 116px;
   padding-left: 150px;
 }
