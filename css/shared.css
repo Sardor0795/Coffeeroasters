@@ -240,15 +240,10 @@ button {
 
 /* FOOTER */
 
-
-
 .footer-social-list {
   display: flex;
   padding: 0;
   margin: 0;
-}
-
-.footer-social-item {
 }
 
 .footer-social-item:not(:last-child) {
