@@ -133,6 +133,16 @@ button {
   background-color: var(--accent-color);
 }
 
+.yellow-btn:hover {
+  --accent-color: rgba(243, 215, 183, 0.8);
+  background-color: var(--accent-color);
+}
+
+.yellow-btn:active {
+  --accent-color: rgba(243, 215, 183, 0.6);
+  background-color: var(--accent-color);
+}
+
 /* CONTAINER */
 
 .container {
@@ -144,22 +154,26 @@ button {
 
 /* HEADER */
 
-.site--header {
+.site--header,
+.site-footer {
   background-color: var(--light-yellow);
 }
 
-.header-container {
+.header-container,
+.footer-container {
   padding: 40px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-logo {
+.header-logo,
+.footer-logo {
   display: flex;
 }
 
-.header-logo-img {
+.header-logo-img,
+.footer-logo-img {
   width: 203px;
   height: 24px;
   flex-shrink: 0;
@@ -224,12 +238,28 @@ button {
   object-fit: cover;
 }
 
-/* RETINA BG */
+/* FOOTER */
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
+
+
+.footer-social-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-item {
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-social-link {
+  display: flex;
+  color: var(--body-color);
+}
+
+.footer-social-link:hover {
+  color: var(--accent-color);
 }
