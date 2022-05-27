@@ -3,6 +3,10 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --accent-color: #0a775f;
+  --light-yellow: #f3d7b7;
+  --body-color: #333333;
+  --yellow-btn-color: #c99b67;
+  --collection-bg: #f8f8f2;
 }
 
 /* FONTS */
@@ -58,7 +62,7 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #fff;
-  color: #333;
+  color: var(--body-color);
   font-family: var(--main-font);
   font-size: 16px;
   margin: 0;
@@ -71,6 +75,15 @@ body {
 
 a {
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:active {
+  opacity: 0.6;
 }
 
 li {
@@ -87,6 +100,39 @@ button {
   display: inline-block;
 }
 
+.btn {
+  align-items: center;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  border: 0;
+  text-transform: uppercase;
+  border-radius: 100px;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.green-btn {
+  background-color: var(--accent-color);
+}
+
+.yellow-btn {
+  background-color: var(--yellow-btn-color);
+}
+
+.btn:hover {
+  --accent-color: rgba(10, 119, 95, 0.8);
+  background-color: var(--accent-color);
+}
+
+.btn:active {
+  --accent-color: rgba(10, 119, 95, 0.6);
+  background-color: var(--accent-color);
+}
+
 /* CONTAINER */
 
 .container {
@@ -98,8 +144,85 @@ button {
 
 /* HEADER */
 
+.site--header {
+  background-color: var(--light-yellow);
+}
 
+.header-container {
+  padding: 40px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.header-logo {
+  display: flex;
+}
+
+.header-logo-img {
+  width: 203px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.site-nav-list {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-nav-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  color: var(--body-color);
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background-color: var(--light-yellow);
+}
+
+.hero-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section-content {
+  padding-top: 116px;
+  padding-right: 116px;
+  padding-left: 150px;
+}
+
+.hero-content-heading {
+  margin-top: 0;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+}
+
+.hero-content-text {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 34px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.hero-section-img {
+  width: 710px;
+  height: 696px;
+  object-fit: cover;
+}
 
 /* RETINA BG */
 
