@@ -90,96 +90,141 @@
             <div class="container drink-container">
                 <div class="drink-inner">
                     <ul class="drink-menu-list">
-                        <li class="drink-menu-item"><a class="drink-menu-link" href="#">01 Preferences</a></li>
-                        <li class="drink-menu-item"><a class="drink-menu-link" href="#">02 Bean Type</a></li>
-                        <li class="drink-menu-item"><a class="drink-menu-link" href="#">03 Quantity</a></li>
-                        <li class="drink-menu-item"><a class="drink-menu-link" href="#">04 Grind Option</a></li>
-                        <li class="drink-menu-item"><a class="drink-menu-link" href="#">05 Deliveries</a></li>
+                        <li class="drink-menu-item">01 Preferences</li>
+                        <li class="drink-menu-item">02 Bean Type</li>
+                        <li class="drink-menu-item">03 Quantity</li>
+                        <li class="drink-menu-item">04 Grind Option</li>
+                        <li class="drink-menu-item">05 Deliveries</li>
                     </ul>
                     <div class="drink-toggle-list">
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title"><a class="drink-title-link" href="#">How do you drink your coffee?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></a></h2>
+                            <h2 class="drink-title">How do you drink your coffee?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Capsule</h3>
-                                    <p class="drink-choose-block-text">Distinct, high quality coffee from a specific family-owned farm</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Filter</h3>
-                                    <p class="drink-choose-block-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Espresso</h3>
-                                    <p class="drink-choose-block-text">Dense and finely ground beans for an intense, flavorful experience</p>
-                                </div>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="capsule" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">Capsule</h3>
+                                        <p class="drink-choose-block-text">Distinct, high quality coffee from a specific family-owned farm</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="capsule" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">Filter</h3>
+                                        <p class="drink-choose-block-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="capsule" type="radio">
+                                    <div class="radio-controller">
+                                         <h3 class="drink-choose-block-title">Espresso</h3>
+                                        <p class="drink-choose-block-text">Dense and finely ground beans for an intense, flavorful experience</p>
+                                    </div>                               
+                                </label>
                             </div>
                         </li>
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title"><a class="drink-title-link" href="#">How do you drink your coffee?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></a></h2>
+                            <h2 class="drink-title">What type of coffee?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Capsule</h3>
-                                    <p class="drink-choose-block-text">Distinct, high quality coffee from a specific family-owned farm</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Filter</h3>
-                                    <p class="drink-choose-block-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Espresso</h3>
-                                    <p class="drink-choose-block-text">Dense and finely ground beans for an intense, flavorful experience</p>
-                                </div>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="type" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">Single Origin</h3>
+                                        <p class="drink-choose-block-text">Distinct, high quality coffee from a specific family-owned farm</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="type" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">Decaf</h3>
+                                        <p class="drink-choose-block-text">Just like regular coffee, except the caffeine has been removed</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="type" type="radio">
+                                    <div class="radio-controller">
+                                         <h3 class="drink-choose-block-title">Blended</h3>
+                                        <p class="drink-choose-block-text">Combination of two or three dark roasted beans of organic coffees</p>
+                                    </div>                               
+                                </label>
                             </div>
                         </li>
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title"><a class="drink-title-link" href="#">How do you drink your coffee?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></a></h2>
+                            <h2 class="drink-title">How much would you like?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Capsule</h3>
-                                    <p class="drink-choose-block-text">Distinct, high quality coffee from a specific family-owned farm</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Filter</h3>
-                                    <p class="drink-choose-block-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Espresso</h3>
-                                    <p class="drink-choose-block-text">Dense and finely ground beans for an intense, flavorful experience</p>
-                                </div>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="how-much" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">250g</h3>
+                                        <p class="drink-choose-block-text">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="how-much" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">500g</h3>
+                                        <p class="drink-choose-block-text">Perfect option for a couple. Yields about 40 delectable cups.</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="how-much" type="radio">
+                                    <div class="radio-controller">
+                                         <h3 class="drink-choose-block-title">1000g</h3>
+                                        <p class="drink-choose-block-text">Perfect for offices and events. Yields about 90 delightful cups.</p>
+                                    </div>                               
+                                </label>
                             </div>
                         </li>
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title"><a class="drink-title-link" href="#">How do you drink your coffee?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></a></h2>
+                            <h2 class="drink-title">Want us to grind them?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Capsule</h3>
-                                    <p class="drink-choose-block-text">Distinct, high quality coffee from a specific family-owned farm</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Filter</h3>
-                                    <p class="drink-choose-block-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Espresso</h3>
-                                    <p class="drink-choose-block-text">Dense and finely ground beans for an intense, flavorful experience</p>
-                                </div>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="grind" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">Wholebean</h3>
+                                        <p class="drink-choose-block-text">Best choice if you cherish the full sensory experience</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="grind" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">Filter</h3>
+                                        <p class="drink-choose-block-text">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="grind" type="radio">
+                                    <div class="radio-controller">
+                                         <h3 class="drink-choose-block-title">Cafetiére</h3>
+                                        <p class="drink-choose-block-text">Course ground beans specially suited for french press coffee</p>
+                                    </div>                               
+                                </label>
                             </div>
                         </li>
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title"><a class="drink-title-link" href="#">How do you drink your coffee?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></a></h2>
+                            <h2 class="drink-title">How often should we deliver?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Capsule</h3>
-                                    <p class="drink-choose-block-text">Distinct, high quality coffee from a specific family-owned farm</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Filter</h3>
-                                    <p class="drink-choose-block-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                                </div>
-                                <div class="drink-choose-block">
-                                    <h3 class="drink-choose-block-title">Espresso</h3>
-                                    <p class="drink-choose-block-text">Dense and finely ground beans for an intense, flavorful experience</p>
-                                </div>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="deliver" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">Every week</h3>
+                                        <p class="drink-choose-block-text">$7.20 per shipment. Includes free first-class shipping.</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="deliver" type="radio">
+                                    <div class="radio-controller">
+                                        <h3 class="drink-choose-block-title">Every 2 weeks</h3>
+                                        <p class="drink-choose-block-text">$9.60 per shipment. Includes free priority shipping.</p>
+                                    </div>
+                                </label>
+                                <label class="drink-choose-block">
+                                    <input class="visually-hidden radio" name="deliver" type="radio">
+                                    <div class="radio-controller">
+                                         <h3 class="drink-choose-block-title">Every month</h3>
+                                        <p class="drink-choose-block-text">$12.00 per shipment. Includes free priority shipping.</p>
+                                    </div>                               
+                                </label>
                             </div>
                         </li>
                         <div class="order-summary">
