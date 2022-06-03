@@ -40,7 +40,8 @@
             <div class="container hero-section-container">
                 <div class="hero-section-content">
                     <h1 class="hero-content-heading">Create plan</h1>
-                    <p class="hero-content-text">Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew method you use. For choice, for convenience, for quality.</p>
+                    <p class="hero-content-text">Coffee the way you wanted it to be. For coffee delivered tomorrow, or
+                        next week. For whatever brew method you use. For choice, for convenience, for quality.</p>
                 </div>
                 <img class="hero-section-img" src="./img/create-hero-img.jpg" width="710" height="696"
                     alt="Cake with iced juice" srcset="./img/create-hero-img.jpg 1x, ./img/create-hero-img@2x.jpg 2x">
@@ -55,28 +56,46 @@
                     <h2 class="plan-heading">How it works</h2>
                     <ul class="plan-box-list">
                         <li class="plan-box-item">
-                            <div class="plan-box-info">
-                                <h3 class="plan-box-heading">Pick your coffee</h3>
-                                <p class="plan-box-text">Select from our evolving range of artisan coffees. Our beans
-                                    are ethically sourced and we pay fair prices for them. There are new coffees in all
-                                    profiles every month for you to try out.</p>
-                            </div>
+                            <label class="input-label">
+                                <input class="input visually-hidden" name="work" type="radio">
+                                <span class="input-controller border"></span>
+                                <div class="plan-box-info">
+                                    <h3 class="plan-box-heading">Pick your coffee</h3>
+                                    <p class="plan-box-text">Customize your order frequency, quantity, even your roast
+                                        style
+                                        and grind type. Pause, skip or cancel your subscription with no commitment
+                                        through
+                                        our online portal.</p>
+                                </div>
+                            </label>
                         </li>
                         <li class="plan-box-item">
-                            <div class="plan-box-info">
-                                <h3 class="plan-box-heading">Choose the frequency</h3>
-                                <p class="plan-box-text">Customize your order frequency, quantity, even your roast style
-                                    and grind type. Pause, skip or cancel your subscription with no commitment through
-                                    our online portal.</p>
-                            </div>
+                            <label class="input-label">
+                                <input class="input visually-hidden" name="work" type="radio">
+                                <span class="input-controller"></span>
+                                <div class="plan-box-info">
+                                    <h3 class="plan-box-heading">Choose the frequency</h3>
+                                    <p class="plan-box-text">Customize your order frequency, quantity, even your roast
+                                        style
+                                        and grind type. Pause, skip or cancel your subscription with no commitment
+                                        through
+                                        our online portal.</p>
+                                </div>
+                            </label>
                         </li>
                         <li class="plan-box-item">
-                            <div class="plan-box-info">
-                                <h3 class="plan-box-heading">Receive and enjoy!</h3>
-                                <p class="plan-box-text">We ship your package within 48 hours, freshly roasted. Sit back
-                                    and enjoy award-winning world-class coffees curated to provide a distinct tasting
-                                    experience.</p>
-                            </div>
+                            <label class="input-label bg-color">
+                                <input class="input visually-hidden" name="work" type="radio">
+                                <span class="input-controller"></span>
+                                <div class="plan-box-info">
+                                    <h3 class="plan-box-heading">Receive and enjoy!</h3>
+                                    <p class="plan-box-text">Customize your order frequency, quantity, even your roast
+                                        style
+                                        and grind type. Pause, skip or cancel your subscription with no commitment
+                                        through
+                                        our online portal.</p>
+                                </div>
+                            </label>
                         </li>
                     </ul>
                     <button class="btn yellow-btn">Create your plan</button>
@@ -98,138 +117,161 @@
                     </ul>
                     <div class="drink-toggle-list">
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title">How do you drink your coffee?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
+                            <h2 class="drink-title">How do you drink your coffee?<img class="down-icon"
+                                    src="./img/down.svg" width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="capsule" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">Capsule</h3>
-                                        <p class="drink-choose-block-text">Distinct, high quality coffee from a specific family-owned farm</p>
+                                        <p class="drink-choose-block-text">Distinct, high quality coffee from a specific
+                                            family-owned farm</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="capsule" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">Filter</h3>
-                                        <p class="drink-choose-block-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                                        <p class="drink-choose-block-text">For pour over or drip methods like Aeropress,
+                                            Chemex, and V60</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="capsule" type="radio">
                                     <div class="radio-controller">
-                                         <h3 class="drink-choose-block-title">Espresso</h3>
-                                        <p class="drink-choose-block-text">Dense and finely ground beans for an intense, flavorful experience</p>
-                                    </div>                               
+                                        <h3 class="drink-choose-block-title">Espresso</h3>
+                                        <p class="drink-choose-block-text">Dense and finely ground beans for an intense,
+                                            flavorful experience</p>
+                                    </div>
                                 </label>
                             </div>
                         </li>
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title">What type of coffee?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
+                            <h2 class="drink-title">What type of coffee?<img class="down-icon" src="./img/down.svg"
+                                    width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="type" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">Single Origin</h3>
-                                        <p class="drink-choose-block-text">Distinct, high quality coffee from a specific family-owned farm</p>
+                                        <p class="drink-choose-block-text">Distinct, high quality coffee from a specific
+                                            family-owned farm</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="type" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">Decaf</h3>
-                                        <p class="drink-choose-block-text">Just like regular coffee, except the caffeine has been removed</p>
+                                        <p class="drink-choose-block-text">Just like regular coffee, except the caffeine
+                                            has been removed</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="type" type="radio">
                                     <div class="radio-controller">
-                                         <h3 class="drink-choose-block-title">Blended</h3>
-                                        <p class="drink-choose-block-text">Combination of two or three dark roasted beans of organic coffees</p>
-                                    </div>                               
+                                        <h3 class="drink-choose-block-title">Blended</h3>
+                                        <p class="drink-choose-block-text">Combination of two or three dark roasted
+                                            beans of organic coffees</p>
+                                    </div>
                                 </label>
                             </div>
                         </li>
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title">How much would you like?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
+                            <h2 class="drink-title">How much would you like?<img class="down-icon" src="./img/down.svg"
+                                    width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="how-much" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">250g</h3>
-                                        <p class="drink-choose-block-text">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                                        <p class="drink-choose-block-text">Perfect for the solo drinker. Yields about 12
+                                            delicious cups.</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="how-much" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">500g</h3>
-                                        <p class="drink-choose-block-text">Perfect option for a couple. Yields about 40 delectable cups.</p>
+                                        <p class="drink-choose-block-text">Perfect option for a couple. Yields about 40
+                                            delectable cups.</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="how-much" type="radio">
                                     <div class="radio-controller">
-                                         <h3 class="drink-choose-block-title">1000g</h3>
-                                        <p class="drink-choose-block-text">Perfect for offices and events. Yields about 90 delightful cups.</p>
-                                    </div>                               
+                                        <h3 class="drink-choose-block-title">1000g</h3>
+                                        <p class="drink-choose-block-text">Perfect for offices and events. Yields about
+                                            90 delightful cups.</p>
+                                    </div>
                                 </label>
                             </div>
                         </li>
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title">Want us to grind them?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
+                            <h2 class="drink-title">Want us to grind them?<img class="down-icon" src="./img/down.svg"
+                                    width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="grind" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">Wholebean</h3>
-                                        <p class="drink-choose-block-text">Best choice if you cherish the full sensory experience</p>
+                                        <p class="drink-choose-block-text">Best choice if you cherish the full sensory
+                                            experience</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="grind" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">Filter</h3>
-                                        <p class="drink-choose-block-text">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                                        <p class="drink-choose-block-text">For drip or pour-over coffee methods such as
+                                            V60 or Aeropress</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="grind" type="radio">
                                     <div class="radio-controller">
-                                         <h3 class="drink-choose-block-title">Cafetiére</h3>
-                                        <p class="drink-choose-block-text">Course ground beans specially suited for french press coffee</p>
-                                    </div>                               
+                                        <h3 class="drink-choose-block-title">Cafetiére</h3>
+                                        <p class="drink-choose-block-text">Course ground beans specially suited for
+                                            french press coffee</p>
+                                    </div>
                                 </label>
                             </div>
                         </li>
                         <li class="drink-toggle-item">
-                            <h2 class="drink-title">How often should we deliver?<img class="down-icon" src="./img/down.svg" width="40" height="40" alt="down"></h2>
+                            <h2 class="drink-title">How often should we deliver?<img class="down-icon"
+                                    src="./img/down.svg" width="40" height="40" alt="down"></h2>
                             <div class="drink-choose-blocks">
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="deliver" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">Every week</h3>
-                                        <p class="drink-choose-block-text">$7.20 per shipment. Includes free first-class shipping.</p>
+                                        <p class="drink-choose-block-text">$7.20 per shipment. Includes free first-class
+                                            shipping.</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="deliver" type="radio">
                                     <div class="radio-controller">
                                         <h3 class="drink-choose-block-title">Every 2 weeks</h3>
-                                        <p class="drink-choose-block-text">$9.60 per shipment. Includes free priority shipping.</p>
+                                        <p class="drink-choose-block-text">$9.60 per shipment. Includes free priority
+                                            shipping.</p>
                                     </div>
                                 </label>
                                 <label class="drink-choose-block">
                                     <input class="visually-hidden radio" name="deliver" type="radio">
                                     <div class="radio-controller">
-                                         <h3 class="drink-choose-block-title">Every month</h3>
-                                        <p class="drink-choose-block-text">$12.00 per shipment. Includes free priority shipping.</p>
-                                    </div>                               
+                                        <h3 class="drink-choose-block-title">Every month</h3>
+                                        <p class="drink-choose-block-text">$12.00 per shipment. Includes free priority
+                                            shipping.</p>
+                                    </div>
                                 </label>
                             </div>
                         </li>
                         <div class="order-summary">
                             <p class="summary-title">Order Summary</p>
-                            <p class="summary-quote">“I drink my coffee as <span class="black">Filter</span>, with a <span class="black">Decaf</span> type of bean. <span class="black">250g</span> ground ala <span class="black">Cafetiére</span>, sent to me <span class="black">Every Week</span>.”</p>
+                            <p class="summary-quote">“I drink my coffee as <span class="black">Filter</span>, with a
+                                <span class="black">Decaf</span> type of bean. <span class="black">250g</span> ground
+                                ala <span class="black">Cafetiére</span>, sent to me <span class="black">Every
+                                    Week</span>.”</p>
                         </div>
                         <button class="btn green-btn order-btn">Create me plan</button>
                     </div>

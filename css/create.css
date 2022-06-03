@@ -1,8 +1,7 @@
 /* PLAN SECTION */
 
 .plan-section {
-  margin-bottom: 20px;
-  padding-top: 20px;
+  margin-bottom: 50px;
 }
 
 .plan-container {
@@ -29,16 +28,6 @@
   color: #ffffff;
 }
 
-.plan-box-item::before {
-  content: "";
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  background-color: #f8f8f2;
-  border: 4px solid #c99b67;
-  margin-bottom: 20px;
-}
-
 .plan-box-list {
   padding: 0;
   display: flex;
@@ -59,7 +48,6 @@
 .plan-box-info {
   background-color: #fff;
   padding: 20px;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
@@ -87,6 +75,47 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+}
+
+.input-controller {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #f8f8f2;
+  border: 4px solid #c99b67;
+  margin-bottom: 20px;
+  z-index: 100;
+}
+
+.input:checked + .input-controller {
+  background-image: url("../img/check-regular-24.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 4px solid #c99b67;
+}
+
+.input:checked ~ .plan-box-info {
+  background-color: #c99b67;
+  color: #fff;
+}
+
+.border::after {
+  content: "";
+  z-index: -20;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: inline-block;
+  width: 848px;
+  border-bottom: 3px dashed #c99b67;
+}
+
+.bg-color {
+  background-color: #fff;
+  background-image: url("../img/plan-bg.jpg");
+  z-index: 999;
 }
 
 /* DRINK SECTION */
