@@ -202,6 +202,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .plan-box-info::before {
@@ -238,6 +239,7 @@
   border: 4px solid #c99b67;
   margin-bottom: 20px;
   z-index: 100;
+  cursor: pointer;
 }
 
 .input:checked + .input-controller {
@@ -254,6 +256,7 @@
 }
 
 .border::after {
+  pointer-events: none;
   content: "";
   z-index: -20;
   position: absolute;
