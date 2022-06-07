@@ -1,6 +1,7 @@
 /* PLAN SECTION */
 
 .plan-section {
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -15,6 +16,7 @@
   background-position: center center;
   padding: 50px 30px;
   text-align: center;
+  position: relative;
 }
 
 .plan-heading {
@@ -43,6 +45,7 @@
   counter-increment: HOW-IT-WORKS;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .plan-box-info {
@@ -61,6 +64,21 @@
   font-size: 64px;
   line-height: 75px;
   margin-bottom: 45px;
+}
+
+.plan-box-info::after {
+  content: "";
+  width: 433px;
+  height: 4px;
+  background-image: url("../img/plan-box-after.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 30px;
+}
+
+.after-none::after {
+  display: none;
 }
 
 .plan-box-heading {
@@ -101,23 +119,6 @@
 .input:checked ~ .plan-box-info {
   background-color: #c99b67;
   color: #fff;
-}
-
-.border::after {
-  content: "";
-  z-index: -20;
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  display: inline-block;
-  width: 848px;
-  border-bottom: 3px dashed #c99b67;
-}
-
-.bg-color {
-  background-color: #fff;
-  background-image: url("../img/plan-bg.jpg");
-  z-index: 999;
 }
 
 /* DRINK SECTION */

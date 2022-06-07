@@ -25,6 +25,7 @@
   background-color: var(--collection-bg);
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .collection-heading {
@@ -78,6 +79,24 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
+}
+
+.leaf-1 {
+  position: absolute;
+  top: 60px;
+  left: -140px;
+}
+
+.leaf-2 {
+  position: absolute;
+  top: 685px;
+  right: -213px;
+}
+
+.leaf-3 {
+  position: absolute;
+  bottom: 170px;
+  left: -160px;
 }
 
 /* SCHOOSE SECTION */
@@ -167,6 +186,7 @@
   background-position: center center;
   padding: 50px 30px;
   text-align: center;
+  position: relative;
 }
 
 .plan-heading {
@@ -195,6 +215,7 @@
   counter-increment: HOW-IT-WORKS;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .plan-box-info {
@@ -213,6 +234,21 @@
   font-size: 64px;
   line-height: 75px;
   margin-bottom: 45px;
+}
+
+.plan-box-info::after {
+  content: "";
+  width: 433px;
+  height: 4px;
+  background-image: url("../img/plan-box-after.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 30px;
+}
+
+.after-none::after {
+  display: none;
 }
 
 .plan-box-heading {
@@ -255,22 +291,10 @@
   color: #fff;
 }
 
-.border::after {
-  pointer-events: none;
-  content: "";
-  z-index: -20;
+.plan-but-img {
   position: absolute;
-  top: 50%;
-  left: 100%;
-  display: inline-block;
-  width: 848px;
-  border-bottom: 3px dashed #c99b67;
-}
-
-.bg-color {
-  background-color: #fff;
-  background-image: url("../img/plan-bg.jpg");
-  z-index: 999;
+  top: 41px;
+  right: 68px;
 }
 
 /* RETINA BG */

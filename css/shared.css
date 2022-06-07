@@ -67,6 +67,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .main-content {
