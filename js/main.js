@@ -1,6 +1,7 @@
-const elDrinkTitle = document.querySelector(".drink-title");
-const elDrinkChoose = document.querySelector(".drink-choose-blocks");
+const elDrinkSection = document.querySelector(".drink-section");
 
-elDrinkTitle.addEventListener("click", function () {
-  elDrinkChoose.classList.toggle("drink-choose-blocks-open");
+elDrinkSection.addEventListener("click", function (evt) {
+  if (evt.target.matches(".drink-title")) {
+    evt.target.nextElementSibling.classList.toggle("drink-choose-blocks-open");
+  }
 });
