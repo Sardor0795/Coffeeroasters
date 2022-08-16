@@ -247,9 +247,9 @@ button {
 
 .coffee-img {
   position: absolute;
-  right: 43%;
+  right: 46%;
   border-radius: 50%;
-  transform: translateY(-45%);
+  transform: translateY(-30%) rotate(-35deg);
 }
 
 /* FOOTER */
